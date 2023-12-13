@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{59BA32CD-0926-8D30-F067-F9F434E97186}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ServerExample.cs">
+    <Files>
+      <File FileName="Assets/RealisticEyeMovements/Demo assets/DemoController.cs" Line="3" Column="43" />
+      <File FileName="Assets/RealisticEyeMovements/Scripts/EyeAndHeadAnimator.cs" />
+      <File FileName="Assets/ServerExample.cs" Line="29" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9d1c26f8-cff9-4740-9e96-347460df54f1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
