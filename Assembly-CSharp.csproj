@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CalculateLog.cs" />
     <Compile Include="Assets\RealisticEyeMovements\Demo assets\DemoController.cs" />
     <Compile Include="Assets\RealisticEyeMovements\Scripts\EyeAndHeadAnimator.cs" />
     <Compile Include="Assets\RealisticEyeMovements\Scripts\Helper\POI.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\RealisticEyeMovements\Scripts\Legacy\EyeAndHeadAnimatorForExport.cs" />
     <Compile Include="Assets\RealisticEyeMovements\Scripts\LookTargetController.cs" />
     <Compile Include="Assets\ServerExample.cs" />
+    <Compile Include="Assets\TimeCount.cs" />
     <None Include="Assets\RealisticEyeMovements\Presets\DAZ_Studio\Readme_Blendshapes.txt" />
     <None Include="Assets\RealisticEyeMovements\Changelog.txt" />
     <Reference Include="UnityEngine">
