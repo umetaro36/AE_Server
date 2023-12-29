@@ -3,9 +3,9 @@
     <Files>
       <File FileName="Assets/RealisticEyeMovements/Demo assets/DemoController.cs" Line="3" Column="43" />
       <File FileName="Assets/RealisticEyeMovements/Scripts/EyeAndHeadAnimator.cs" />
-      <File FileName="Assets/ServerExample.cs" Line="16" Column="18" />
       <File FileName="Assets/CalculateLog.cs" />
       <File FileName="Assets/TimeCount.cs" />
+      <File FileName="Assets/ServerExample.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
