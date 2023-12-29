@@ -21,6 +21,7 @@ namespace WebSocketSharp.Server
             server.AddWebSocketService<Echo>("/");
             server.Start();
             Debug.Log("サーバ起動");
+
         }
 
         void OnDestroy()
@@ -41,6 +42,57 @@ namespace WebSocketSharp.Server
             server.WebSocketServices["/"].Sessions.Broadcast("LookAtPlayer状態に変更");
             Debug.Log("LookAtPlayer状態に変更");
         }
+
+        //--------------------ここからLoadSceneOpperation(シーン遷移用)-----------------------------
+        public void Break()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：0");
+            Debug.Log("シーン遷移：Break");
+        }
+
+        public void GazeOn100()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：1");
+            Debug.Log("シーン遷移：100GazeOn");
+        }
+
+        public void Random()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：2");
+            Debug.Log("シーン遷移：Random");
+        }
+
+        public void Tracking()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：3");
+            Debug.Log("シーン遷移：Tracking");
+        }
+
+        public void Escape()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：4");
+            Debug.Log("シーン遷移：Escape");
+        }
+
+        public void UmeModel()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：5");
+            Debug.Log("シーン遷移：UmeModel");
+        }
+
+        //--------------------ここから実験Introduction：Agent制御用-----------------------------
+        public void EntryAgent()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("EntryAgent");
+            Debug.Log("EntryAgent");
+        }
+
+        public void Explain()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("Explain");
+            Debug.Log("Explain");
+        }
+
     }
 
     //public MessageEventArgs e;
