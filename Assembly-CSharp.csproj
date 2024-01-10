@@ -64,7 +64,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ButtonClickRecorder.cs" />
     <Compile Include="Assets\CalculateLog.cs" />
+    <Compile Include="Assets\NewBehaviourScript.cs" />
+    <Compile Include="Assets\PushButton.cs" />
     <Compile Include="Assets\RealisticEyeMovements\Demo assets\DemoController.cs" />
     <Compile Include="Assets\RealisticEyeMovements\Scripts\EyeAndHeadAnimator.cs" />
     <Compile Include="Assets\RealisticEyeMovements\Scripts\Helper\POI.cs" />
