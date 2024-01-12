@@ -2,21 +2,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.IO;
+using System;
 
 public class ButtonClickRecorder : MonoBehaviour
 {
     private struct ButtonClickRecord
     {
         public string buttonName;
-        public float timestamp;
-        public string fileName;
+        public string timestamp;
+        //public string fileName;
     }
-
+    //public  string fileName;
     private List<ButtonClickRecord> clickRecords = new List<ButtonClickRecord>();
-    private string csvFilePath = "Assets/" + fileName + ".csv";
+    private static string fileName;
+    public string csvFilePath = "Assets/" + fileName + ".csv";
+    
 
     void Start()
     {
+        
         // 全てのボタンに対してクリック時のイベントを登録
         Button[] buttons = FindObjectsOfType<Button>();
         foreach (Button button in buttons)
@@ -28,7 +32,7 @@ public class ButtonClickRecorder : MonoBehaviour
     void OnButtonClick(string buttonName)
     {
         // ボタンがクリックされたときのタイムスタンプを取得
-        float timestamp = Time.time;
+        string timestamp = DateTime.Now.ToString("MM/dd HH:mm:ss:ffff");
 
         // レコードを作成
         ButtonClickRecord record = new ButtonClickRecord

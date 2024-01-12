@@ -591,6 +591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 084d10edf134541ea8b95372393e65fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  csvFilePath: Assets/2.csv
 --- !u!1 &253178787
 GameObject:
   m_ObjectHideFlags: 0
