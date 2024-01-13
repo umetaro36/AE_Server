@@ -15,7 +15,7 @@ public class ButtonClickRecorder : MonoBehaviour
     //public  string fileName;
     private List<ButtonClickRecord> clickRecords = new List<ButtonClickRecord>();
     private static string fileName = "001";
-    public string csvFilePath = "Assets/" + fileName + ".csv";
+    private string csvFilePath = "Assets/" + fileName + ".csv";
     
 
     void Start()
@@ -59,7 +59,7 @@ public class ButtonClickRecorder : MonoBehaviour
             Debug.Log(fileName);
             using (StreamWriter sw = new StreamWriter(csvFilePath, true))
             {
-                sw.WriteLine("ButtonName***,Timestamp");
+                sw.WriteLine("ButtonName,Timestamp");
             }
         }
 
