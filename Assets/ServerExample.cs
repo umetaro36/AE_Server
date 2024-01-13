@@ -44,10 +44,16 @@ namespace WebSocketSharp.Server
         }
 
         //--------------------ここからLoadSceneOpperation(シーン遷移用)-----------------------------
-        public void Break()
+        public void Break4()
         {
-            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：0");
-            Debug.Log("シーン遷移：Break");
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：Break4");
+            Debug.Log("シーン遷移：Break_4characters");
+        }
+
+        public void Break5()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：Break5");
+            Debug.Log("シーン遷移：Break_5characters");
         }
 
         public void GazeOn100()
@@ -74,10 +80,16 @@ namespace WebSocketSharp.Server
             Debug.Log("シーン遷移：Escape");
         }
 
-        public void UmeModel()
+        public void Gaze0ff100()
         {
             server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：5");
-            Debug.Log("シーン遷移：UmeModel");
+            Debug.Log("シーン遷移：100GazeOff");
+        }
+
+        public void End()
+        {
+            server.WebSocketServices["/"].Sessions.Broadcast("LoadScene：6");
+            Debug.Log("シーン遷移：End");
         }
 
         //--------------------ここから実験Introduction：Agent制御用-----------------------------
@@ -109,7 +121,7 @@ namespace WebSocketSharp.Server
         protected override void OnMessage(MessageEventArgs e)   //データ受信時に呼ばれる　
         {
 
-            Debug.Log(e.Data);
+            //Debug.Log(e.Data);
             //Sessions.Broadcast(e.Data);   //クライアントにデータを返信
 
         }

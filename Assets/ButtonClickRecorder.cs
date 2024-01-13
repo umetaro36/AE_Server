@@ -14,13 +14,13 @@ public class ButtonClickRecorder : MonoBehaviour
     }
     //public  string fileName;
     private List<ButtonClickRecord> clickRecords = new List<ButtonClickRecord>();
-    private static string fileName;
+    private static string fileName = "001";
     public string csvFilePath = "Assets/" + fileName + ".csv";
     
 
     void Start()
     {
-        
+        Debug.Log(fileName);
         // 全てのボタンに対してクリック時のイベントを登録
         Button[] buttons = FindObjectsOfType<Button>();
         foreach (Button button in buttons)
@@ -56,9 +56,10 @@ public class ButtonClickRecorder : MonoBehaviour
         // CSVファイルが存在しない場合はヘッダーを書き込む
         if (!File.Exists(csvFilePath))
         {
+            Debug.Log(fileName);
             using (StreamWriter sw = new StreamWriter(csvFilePath, true))
             {
-                sw.WriteLine("ButtonName,Timestamp");
+                sw.WriteLine("ButtonName***,Timestamp");
             }
         }
 
